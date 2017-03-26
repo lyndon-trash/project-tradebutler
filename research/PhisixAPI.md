@@ -779,3 +779,181 @@ _dc:1490521494863
    ]
 }
 ```
+
+## Circulars
+```
+POST
+http://www.pse.com.ph/stockMarket/disclosuresDisclosures.html?method=searchCompanyDisclosures&ajax=true
+```
+
+###### Request:
+```
+Query Params:
+method:getCircularsForThisDate
+ajax:true
+
+Form Params:
+start:0
+limit:15
+circularType:ALL TYPES
+```
+
+###### Response:
+```json
+{  
+   "count":15,
+   "totalCount":735,
+   "records":[  
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2017-03-21 00:00:00.0",
+         "circularTitle":"DDS Training Session",
+         "noOfPages":4,
+         "endDate":"2017-03-24 00:00:00.0",
+         "dateUploaded":"2017-03-21 17:57:53.0",
+         "circularLocation":"/resource/memos/2017/CN_2017-0013.pdf",
+         "circularID":"CN_2017-0013"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2017-03-20 00:00:00.0",
+         "circularTitle":"5th Asia Pacific Real Estate Investment Summit Philippines",
+         "noOfPages":4,
+         "endDate":"2017-04-01 00:00:00.0",
+         "dateUploaded":"2017-03-20 14:03:27.0",
+         "circularLocation":"/resource/memos/2017/CN_2017-0012.pdf",
+         "circularID":"CN_2017-0012"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2017-03-15 00:00:00.0",
+         "circularTitle":"Share Allocation to Trading Participants during Public Offering of Dollar Denominated Securities",
+         "noOfPages":1,
+         "endDate":"2017-05-15 00:00:00.0",
+         "dateUploaded":"2017-03-15 12:03:09.0",
+         "circularLocation":"/resource/memos/2017/CN_2017-0011.pdf",
+         "circularID":"CN_2017-0011"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2017-03-02 00:00:00.0",
+         "circularTitle":"PSE Cash Dividends",
+         "noOfPages":7,
+         "endDate":"2017-04-27 00:00:00.0",
+         "dateUploaded":"2017-03-02 12:10:29.0",
+         "circularLocation":"/resource/memos/2017/CN_2017-0010.pdf",
+         "circularID":"CN_2017-0010"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2017-03-01 00:00:00.0",
+         "circularTitle":"Additional Revisions to the Proposed Listing Rule Amendment",
+         "noOfPages":5,
+         "endDate":"2017-03-10 00:00:00.0",
+         "dateUploaded":"2017-03-01 17:53:16.0",
+         "circularLocation":"/resource/memos/2017/CN_2017-0009.pdf",
+         "circularID":"CN_2017-0009"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2017-02-22 00:00:00.0",
+         "circularTitle":"RECOMPOSITION OF PSE INDICES",
+         "noOfPages":7,
+         "endDate":"2017-03-22 00:00:00.0",
+         "dateUploaded":"2017-02-22 12:30:12.0",
+         "circularLocation":"/resource/memos/2017/CN_2017-0008.pdf",
+         "circularID":"CN_2017-0008"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2017-01-25 00:00:00.0",
+         "circularTitle":"PSE LIBRARY & INVESTORS' LOUNGE CLOSED ON FEBRUARY 9, 2017",
+         "noOfPages":1,
+         "endDate":"2017-02-09 00:00:00.0",
+         "dateUploaded":"2017-01-25 14:24:44.0",
+         "circularLocation":"/resource/memos/2017/CN_2017-0007.pdf",
+         "circularID":"CN_2017-0007"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2017-01-20 00:00:00.0",
+         "circularTitle":"Reminder for the Submission of the 2016 Corporate Governance Guidelines Disclosure Survey",
+         "noOfPages":37,
+         "endDate":"2017-04-07 00:00:00.0",
+         "dateUploaded":"2017-01-20 14:20:02.0",
+         "circularLocation":"/resource/memos/2017/CN_2017-0006(1).pdf",
+         "circularID":"CN_2017-0006"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2017-01-19 00:00:00.0",
+         "circularTitle":"Proposed SEC Rules and Regulations Governing the Registration and Trading of Structured Warrants",
+         "noOfPages":22,
+         "endDate":"2017-02-10 00:00:00.0",
+         "dateUploaded":"2017-01-19 09:26:27.0",
+         "circularLocation":"/resource/memos/2017/CN_2017-0005.pdf",
+         "circularID":"CN_2017-0005"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2017-01-17 00:00:00.0",
+         "circularTitle":"EXTENSION of Survey on the 2016 Code of Corporate Governance",
+         "noOfPages":1,
+         "endDate":"2017-01-27 00:00:00.0",
+         "dateUploaded":"2017-01-17 10:06:48.0",
+         "circularLocation":"/resource/memos/2017/CN_2017-0004.pdf",
+         "circularID":"CN_2017-0004"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2017-01-12 00:00:00.0",
+         "circularTitle":"ING BANK N.V., MANILA BRANCH - Accredited Firm for Issuing Fairness Opinions and Valuation Reports",
+         "noOfPages":2,
+         "endDate":"2018-01-12 00:00:00.0",
+         "dateUploaded":"2017-01-12 16:15:37.0",
+         "circularLocation":"/resource/memos/2017/CN_2017-0003.pdf",
+         "circularID":"CN_2017-0003"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2017-01-09 00:00:00.0",
+         "circularTitle":"Updated List of Shariah-Compliant Securities",
+         "noOfPages":4,
+         "endDate":"2017-01-23 00:00:00.0",
+         "dateUploaded":"2017-01-09 09:22:30.0",
+         "circularLocation":"/resource/memos/2017/CN_2017-0002.pdf",
+         "circularID":"CN_2017-0002"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2017-01-04 00:00:00.0",
+         "circularTitle":"Additional Training Sessions on Dollar Denominated Securities",
+         "noOfPages":3,
+         "endDate":"2017-01-11 00:00:00.0",
+         "dateUploaded":"2017-01-04 16:51:48.0",
+         "circularLocation":"/resource/memos/2017/CN_2017-0001.pdf",
+         "circularID":"CN_2017-0001"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2016-12-27 00:00:00.0",
+         "circularTitle":"Survey on the 2016 Code of Corporate Governance for Publicly Listed Companies",
+         "noOfPages":1,
+         "endDate":"2017-01-11 00:00:00.0",
+         "dateUploaded":"2016-12-27 11:15:58.0",
+         "circularLocation":"/resource/memos/2016/CN_2016-0087.pdf",
+         "circularID":"CN_2016-0087"
+      },
+      {  
+         "circularType":"CIRCULAR",
+         "startDate":"2016-12-20 00:00:00.0",
+         "circularTitle":"Proposed Amendment to the Listing Rules",
+         "noOfPages":4,
+         "endDate":"2016-12-29 00:00:00.0",
+         "dateUploaded":"2016-12-20 18:09:12.0",
+         "circularLocation":"/resource/memos/2016/CN_2016-0086.pdf",
+         "circularID":"CN_2016-0086"
+      }
+   ]
+}
+```
