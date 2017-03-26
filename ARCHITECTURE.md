@@ -11,6 +11,7 @@ Bautista
 - harvests master data from the Phisix Server
 - possibly illegal **wink**
 - receives mining commands from a Messaging Queue (Kafka)
+- as of the moment, just manually send Messages to test functionality
 
 +------------+
 | PostgreSQL |
