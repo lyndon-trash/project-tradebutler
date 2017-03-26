@@ -54,7 +54,7 @@ security:165
 ```
 
 ###### Response:
-```
+```json
 {  
    "count":1,
    "records":[  
@@ -97,7 +97,7 @@ security:468
 ```
 
 ###### Response:
-```
+```json
 {  
    "count":7,
    "records":[  
