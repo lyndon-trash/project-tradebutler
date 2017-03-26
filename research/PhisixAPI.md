@@ -36,7 +36,7 @@ query:bdo
 }
 ```
 
-## Company Info
+## Company Info: Year Totals
 ```
 POST
 http://www.pse.com.ph/stockMarket/companyInfoSecurityInformation.html?method=getSecurityYearTotals&ajax=true
