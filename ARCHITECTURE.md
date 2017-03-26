@@ -1,7 +1,7 @@
 # System Architecture
 
+#### Version 0.1:
 ```
-Version 0.1:
 Alfred
 - master data storage
 - stores the following data: Stocks, StockPrice
