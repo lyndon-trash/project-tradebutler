@@ -282,3 +282,67 @@ security:468
    ]
 }
 ```
+
+## Security Type
+```
+GET
+http://www.pse.com.ph/stockMarket/companyInfoSecurityProfile.html?method=getSecurityTypes&ajax=true&_dc=1490519319702
+```
+
+###### Request
+```
+Query Params:
+method:getSecurityTypes
+ajax:true
+```
+
+###### Response:
+```json
+{  
+   "count":7,
+   "records":[  
+      {  
+         "declaringClass":"class ph.com.headway.model.SecurityType",
+         "name":"Common",
+         "class":"class ph.com.headway.model.SecurityType",
+         "code":"S"
+      },
+      {  
+         "declaringClass":"class ph.com.headway.model.SecurityType",
+         "name":"Warrants",
+         "class":"class ph.com.headway.model.SecurityType",
+         "code":"W"
+      },
+      {  
+         "declaringClass":"class ph.com.headway.model.SecurityType",
+         "name":"Mutual Fund",
+         "class":"class ph.com.headway.model.SecurityType",
+         "code":"M"
+      },
+      {  
+         "declaringClass":"class ph.com.headway.model.SecurityType",
+         "name":"Preferred",
+         "class":"class ph.com.headway.model.SecurityType",
+         "code":"P"
+      },
+      {  
+         "declaringClass":"class ph.com.headway.model.SecurityType",
+         "name":"Government Bond",
+         "class":"class ph.com.headway.model.SecurityType",
+         "code":"G"
+      },
+      {  
+         "declaringClass":"class ph.com.headway.model.SecurityType",
+         "name":"Common Dollar",
+         "class":"class ph.com.headway.model.SecurityType",
+         "code":"D"
+      },
+      {  
+         "declaringClass":"class ph.com.headway.model.SecurityType",
+         "name":"Philippine Deposit Receipts",
+         "class":"class ph.com.headway.model.SecurityType",
+         "code":"R"
+      }
+   ]
+}
+```
