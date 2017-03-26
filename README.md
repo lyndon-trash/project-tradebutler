@@ -7,13 +7,17 @@ A trading assistant platform for assisting busy individuals with their stock por
 - Research Consolidation: easy way to read updates and be alerted on selected companies
 
 ## Roadmap
-#### Minimum Viable Product:
-- PH Stock List
+#### Version 0.1:
+- MasterList: PH Stock List
 - Stock Prices
+
+#### Version 0.2
 - User Portfolio
+
+#### Version 1.0
 - Warning System for Price Ranges
 
-#### Version 2:
+#### Version 2.0:
 - News Miner 
 
 
