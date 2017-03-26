@@ -104,6 +104,76 @@ query:bdo
 }
 ```
 
+## Historical Data: Security Quote
+```
+POST
+http://www.pse.com.ph/stockMarket/companyInfoHistoricalData.html?method=getRecentSecurityQuoteData&ajax=true
+```
+
+###### Request:
+```
+Query Params:
+method:getRecentSecurityQuoteData
+ajax:true
+
+Form Params:
+security:146
+```
+
+###### Response:
+```json
+{  
+   "count":30,
+   "records":[  
+      {  
+         "sqLow":8.5,
+         "sqOpen":8.5,
+         "sqHigh":8.75,
+         "percChangeClose":2.94118,
+         "sqClose":8.75,
+         "secQid":"SCYQT_20170300014226",
+         "changeClose":0.25,
+         "totalValue":2407765,
+         "totalVolume":277500,
+         "lastTradePrice":8.75,
+         "avgPrice":8.67663063063063,
+         "tradingDate":"2017-03-24 00:00:00.0",
+         "sqPrevious":8.5
+      },
+      {  
+         "sqLow":8.35,
+         "sqOpen":8.4,
+         "sqHigh":8.63,
+         "percChangeClose":1.19048,
+         "sqClose":8.5,
+         "secQid":"SCYQT_20170300013990",
+         "changeClose":0.1,
+         "totalValue":1982294,
+         "totalVolume":231700,
+         "lastTradePrice":8.5,
+         "avgPrice":8.55543375053949,
+         "tradingDate":"2017-03-23 00:00:00.0",
+         "sqPrevious":8.4
+      }
+      {  
+         "sqLow":7.75,
+         "sqOpen":7.79,
+         "sqHigh":7.9,
+         "percChangeClose":1.026957,
+         "sqClose":7.87,
+         "secQid":"SCYQT_20170200007497",
+         "changeClose":0.07999992,
+         "totalValue":563237,
+         "totalVolume":71800,
+         "lastTradePrice":7.87,
+         "avgPrice":7.844526462395543,
+         "tradingDate":"2017-02-13 00:00:00.0",
+         "sqPrevious":7.79
+      }
+   ]
+}
+```
+
 ## Company Info: Dividend Rights
 ```
 POST
