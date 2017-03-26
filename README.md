@@ -29,7 +29,8 @@ A trading assistant platform for assisting busy individuals with their stock por
 - Remove all direct REST calls from server and move all communication to Kafka
 
 #### Version 2.0
-- Rating/Scoring Transactions
+- Rating/Scoring Transaction Quality
+- Post-Transaction Analysis: Identifying Optimal Selling Point
 
 #### Version 3.0:
 - News Miner 
