@@ -14,10 +14,17 @@ A trading assistant platform for assisting busy individuals with their stock por
 - Stock Prices
 
 #### Version 0.2
+- User Management
 - User Portfolio
+- Warning System for Price Ranges
+
+#### Version 0.3
+- iOS Mobile Client
 
 #### Version 1.0
-- Warning System for Price Ranges
+- Mobile Gateway
+- User Security
+- Inter-server Security
 
 #### Version 2.0:
 - News Miner 
