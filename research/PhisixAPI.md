@@ -283,13 +283,13 @@ security:468
 }
 ```
 
-## Security Type
+## Others: Security Type
 ```
 GET
 http://www.pse.com.ph/stockMarket/companyInfoSecurityProfile.html?method=getSecurityTypes&ajax=true&_dc=1490519319702
 ```
 
-###### Request
+###### Request:
 ```
 Query Params:
 method:getSecurityTypes
@@ -342,6 +342,98 @@ ajax:true
          "name":"Philippine Deposit Receipts",
          "class":"class ph.com.headway.model.SecurityType",
          "code":"R"
+      }
+   ]
+}
+```
+
+## Others: Sector
+```
+GET
+http://www.pse.com.ph/stockMarket/companyInfoSecurityProfile.html?method=getSectors&ajax=true&_dc=1490519319799
+```
+
+###### Request
+```
+Query Params:
+method:getSectors
+ajax:true
+```
+
+###### Response
+```json
+{  
+   "count":10,
+   "records":[  
+      {  
+         "indexId":"PSE_MKTIN20080000001",
+         "isSectoral":"Y",
+         "sortOrder":2,
+         "indexName":"All Shares",
+         "indexAbb":"ALL"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000002",
+         "isSectoral":"N",
+         "sortOrder":1,
+         "indexName":"PSEi",
+         "indexAbb":"PSE"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000003",
+         "isSectoral":"Y",
+         "sortOrder":3,
+         "indexName":"Financials",
+         "indexAbb":"FIN"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000008",
+         "isSectoral":"Y",
+         "sortOrder":4,
+         "indexName":"Industrial",
+         "indexAbb":"IND"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000004",
+         "isSectoral":"Y",
+         "sortOrder":5,
+         "indexName":"Holding Firms",
+         "indexAbb":"HDG"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000007",
+         "isSectoral":"Y",
+         "sortOrder":7,
+         "indexName":"Mining and Oil",
+         "indexAbb":"M-O"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000005",
+         "isSectoral":"Y",
+         "sortOrder":8,
+         "indexName":"Property",
+         "indexAbb":"PRO"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000006",
+         "isSectoral":"Y",
+         "sortOrder":6,
+         "indexName":"Services",
+         "indexAbb":"SVC"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000009",
+         "isSectoral":"Y",
+         "sortOrder":9,
+         "indexName":"SME",
+         "indexAbb":"SME"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000010",
+         "isSectoral":"Y",
+         "sortOrder":9,
+         "indexName":"ETF Equity",
+         "indexAbb":"ETF"
       }
    ]
 }
