@@ -1,5 +1,5 @@
 # Project: Trade Butler
-A trading assistant platform for assisting busy individuals with their stock portfolios
+A trading assistant platform for assisting busy individuals with their stock portfolios. This problem is close to heart and inspired by the manga "[Investor Z](http://animanga.wikia.com/wiki/Investor_Z)". 
 
 [System Architecture](ARCHITECTURE.md)
 
