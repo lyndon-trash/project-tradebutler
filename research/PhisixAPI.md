@@ -5,11 +5,16 @@ http://www.pse.com.ph/stockMarket/home.html
 POST
 http://www.pse.com.ph/stockMarket/home.html?method=findSecurityOrCompany&ajax=true
 
-Form Params:
+Request:
 ```
+Form Params:
 start:0
 limit:6
 query:bdo
+
+Query Params:
+method:findSecurityOrCompany
+ajax:true
 ```
 Response:
 ```json
