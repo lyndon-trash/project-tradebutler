@@ -1,6 +1,8 @@
 # Project: Trade Butler
 A trading assistant platform for assisting busy individuals with their stock portfolios
 
+[System Architecture](ARCHITECTURE.md)
+
 #### Problems:
 - Entry/Exit Strategy: figuring out when to buy and sell stocks
 - Pickles: identifying pickled stocks
