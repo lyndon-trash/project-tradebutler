@@ -438,3 +438,156 @@ ajax:true
    ]
 }
 ```
+
+## Others: Sub-sector
+```
+GET
+http://www.pse.com.ph/stockMarket/companyInfoSecurityProfile.html?method=getSubsectors&ajax=true&_dc=1490519319900
+```
+
+###### Request
+```
+Query Params:
+method:getSubsectors
+ajax:true
+```
+
+###### Response
+```json
+{  
+   "count":27,
+   "records":[  
+      {  
+         "indexId":"PSE_MKTIN20080000003",
+         "subsectorName":"Banks",
+         "subsectorID":"1"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000003",
+         "subsectorName":"Other Financial Institutions",
+         "subsectorID":"2"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000008",
+         "subsectorName":"Electricity, Energy, Power & Water",
+         "subsectorID":"3"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000008",
+         "subsectorName":"Food, Beverage & Tobacco",
+         "subsectorID":"4"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000008",
+         "subsectorName":"Construction, Infra. & Allied Services",
+         "subsectorID":"5"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000008",
+         "subsectorName":"Chemicals",
+         "subsectorID":"6"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000008",
+         "subsectorName":"Other Industrials",
+         "subsectorID":"7"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000004",
+         "subsectorName":"Holding Firms",
+         "subsectorID":"8"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000005",
+         "subsectorName":"Property",
+         "subsectorID":"9"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000006",
+         "subsectorName":"Media",
+         "subsectorID":"10"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000006",
+         "subsectorName":"Telecommunications",
+         "subsectorID":"11"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000006",
+         "subsectorName":"Information Technology",
+         "subsectorID":"12"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000006",
+         "subsectorName":"Transportation Services",
+         "subsectorID":"13"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000006",
+         "subsectorName":"Hotel & Leisure",
+         "subsectorID":"14"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000006",
+         "subsectorName":"Education",
+         "subsectorID":"15"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000006",
+         "subsectorName":"Other Services",
+         "subsectorID":"16"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000007",
+         "subsectorName":"Mining",
+         "subsectorID":"17"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000007",
+         "subsectorName":"Oil",
+         "subsectorID":"18"
+      },
+      {  
+         "subsectorName":"Preferred",
+         "subsectorID":"19"
+      },
+      {  
+         "subsectorName":"Warrants, Phil. Deposit Receipts, etc.",
+         "subsectorID":"20"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000009",
+         "subsectorName":"Small, Medium & Emerging Board",
+         "subsectorID":"21"
+      },
+      {  
+         "subsectorName":"Bonds",
+         "subsectorID":"22"
+      },
+      {  
+         "subsectorName":"Dollar Denominated Trading",
+         "subsectorID":"23"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000008",
+         "subsectorName":"Electrical Components & Equipment",
+         "subsectorID":"24"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000006",
+         "subsectorName":"Casinos & Gaming",
+         "subsectorID":"25"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000006",
+         "subsectorName":"Retail",
+         "subsectorID":"26"
+      },
+      {  
+         "indexId":"PSE_MKTIN20080000010",
+         "subsectorName":"ETF-Equity",
+         "subsectorID":"27"
+      }
+   ]
+}
+```
