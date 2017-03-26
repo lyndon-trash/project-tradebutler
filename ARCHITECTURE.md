@@ -10,6 +10,7 @@ Alfred
 Bautista
 - harvests master data from the Phisix Server
 - possibly illegal **wink**
+- receives mining commands from a Messaging Queue (Kafka)
 
 +------------+
 | PostgreSQL |
