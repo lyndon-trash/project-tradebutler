@@ -7,7 +7,7 @@ POST
 http://www.pse.com.ph/stockMarket/home.html?method=findSecurityOrCompany&ajax=true
 ```
 
-Request:
+###### Request:
 ```
 Query Params:
 method:findSecurityOrCompany
@@ -18,7 +18,7 @@ start:0
 limit:6
 query:bdo
 ```
-Response:
+###### Response:
 ```json
 {  
    "count":1,
@@ -42,7 +42,7 @@ POST
 http://www.pse.com.ph/stockMarket/companyInfoSecurityInformation.html?method=getSecurityYearTotals&ajax=true
 ```
 
-Request:
+###### Request:
 ```
 Query Params:
 method:getSecurityYearTotals
@@ -52,7 +52,7 @@ Form Params:
 security:468
 ```
 
-Response:
+###### Response:
 ```
 {  
    "count":7,
