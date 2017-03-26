@@ -661,3 +661,121 @@ ajax:true
    ]
 }
 ```
+
+## Disclosures: Unstructured Types
+```
+GET
+http://www.pse.com.ph/stockMarket/disclosuresDisclosures.html?method=getUnstructuredTypes&ajax=true&_dc=1490521494863
+```
+
+###### Request:
+```
+method:getUnstructuredTypes
+ajax:true
+_dc:1490521494863
+```
+
+###### Response:
+```json
+{  
+   "count":17,
+   "records":[  
+      {  
+         "formTypeId":"17-C",
+         "unstructuredType":"Company Announcements",
+         "categoryCode":"CDIS",
+         "utId":"PSE_UNTYP20080000001"
+      },
+      {  
+         "formTypeId":"20-IS\n",
+         "unstructuredType":"Definitive Information Statement",
+         "categoryCode":"DINF",
+         "utId":"PSE_UNTYP20080000002"
+      },
+      {  
+         "formTypeId":"17-C",
+         "unstructuredType":"Dividend Notice",
+         "categoryCode":"DIV",
+         "utId":"PSE_UNTYP20080000003"
+      },
+      {  
+         "formTypeId":"23-A",
+         "unstructuredType":"Initial Statement of Beneficial Ownership of Securities ",
+         "categoryCode":"BOR",
+         "utId":"PSE_UNTYP20080000004"
+      },
+      {  
+         "unstructuredType":"Notice of Analysts'/Investors' Briefing",
+         "categoryCode":"NAIB",
+         "utId":"PSE_UNTYP20080000006"
+      },
+      {  
+         "formTypeId":"17-L",
+         "unstructuredType":"Request for extension to file SEC Form 17-A/SEC Form 17-Q",
+         "categoryCode":"NIF",
+         "utId":"PSE_UNTYP20080000007"
+      },
+      {  
+         "unstructuredType":"Others",
+         "categoryCode":"OTHD",
+         "utId":"PSE_UNTYP20080000008"
+      },
+      {  
+         "formTypeId":"20-IS",
+         "unstructuredType":"Preliminary Information Statement ",
+         "categoryCode":"INFO",
+         "utId":"PSE_UNTYP20080000009"
+      },
+      {  
+         "formTypeId":"18-A",
+         "unstructuredType":"Report by Owner of More Than Five Percent",
+         "categoryCode":"OMFP",
+         "utId":"PSE_UNTYP20080000010"
+      },
+      {  
+         "unstructuredType":"Report on Lost Stock Certificates",
+         "categoryCode":"LOST",
+         "utId":"PSE_UNTYP20080000011"
+      },
+      {  
+         "formTypeId":"18-AS",
+         "unstructuredType":"Short Form Report by Certain Institutional Owners of More Than Five Percent",
+         "categoryCode":"CIOM",
+         "utId":"PSE_UNTYP20080000013"
+      },
+      {  
+         "formTypeId":"23-B",
+         "unstructuredType":"Statement of Changes in Beneficial Ownership of Securities ",
+         "categoryCode":"CBOS",
+         "utId":"PSE_UNTYP20080000014"
+      },
+      {  
+         "unstructuredType":"Stock Rights Notice",
+         "categoryCode":"RGTS",
+         "utId":"PSE_UNTYP20080000015"
+      },
+      {  
+         "formTypeId":"19-1",
+         "unstructuredType":"Tender Offer Report ",
+         "categoryCode":"TEND",
+         "utId":"PSE_UNTYP20080000016"
+      },
+      {  
+         "unstructuredType":"Verification of Mines and Geosciences Bureau",
+         "categoryCode":"VBM",
+         "utId":"PSE_UNTYP20080000017"
+      },
+      {  
+         "unstructuredType":"Verification of Department of Energy",
+         "categoryCode":"VDE",
+         "utId":"PSE_UNTYP20080000018"
+      },
+      {  
+         "formTypeId":"17-C",
+         "unstructuredType":"Annual/Special Stockholders' Meeting",
+         "categoryCode":"SM",
+         "utId":"PSE_UNTYP20080000020"
+      }
+   ]
+}
+```
