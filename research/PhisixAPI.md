@@ -104,6 +104,81 @@ query:bdo
 }
 ```
 
+## Company Info: Dividend Rights
+```
+POST
+http://www.pse.com.ph/stockMarket/dividendRights.html?method=getDividends&ajax=true
+```
+
+###### Request:
+```
+Query Params:
+method:getDividends
+ajax:true
+
+Form Params:
+start:0
+limit:5
+secid:165
+```
+
+###### Response:
+```json
+{  
+   "count":5,
+   "totalCount":9,
+   "records":[  
+      {  
+         "dividendType":"PROPERTY",
+         "securityID":"165",
+         "disclosureNo":"7730-2013",
+         "dividendId":"PSE_DVDND20130000150",
+         "dividendValue":"240,196,000 common shares of stock of Top Frontier Investment Holdings, Inc. (\"Top Frontier\")",
+         "companyName":"San Miguel Corporation",
+         "exDividendDate":"2013-10-30 00:00:00.0",
+         "disclosureLocation":"/resource/disclosures/2013/pdf/dc2013-7730_SMC.pdf",
+         "recordDate":"2013-11-05 00:00:00.0",
+         "securitySymbol":"SMC",
+         "disclosureID":"PSE_DSCLR20130009186",
+         "securityName":"SAN MIGUEL CORPORATION",
+         "companyId":"154"
+      },
+      {  
+         "dividendType":"CASH",
+         "securityID":"165",
+         "disclosureNo":"4849-2013",
+         "dividendId":"PSE_DVDND20130000071",
+         "dividendValue":"P0.35 per common share",
+         "companyName":"San Miguel Corporation",
+         "exDividendDate":"2013-06-25 00:00:00.0",
+         "disclosureLocation":"/resource/disclosures/2013/pdf/dc2013-4849_SMC.pdf",
+         "recordDate":"2013-06-28 00:00:00.0",
+         "disclosureID":"PSE_DSCLR20130006042",
+         "securitySymbol":"SMC",
+         "securityName":"SAN MIGUEL CORPORATION",
+         "companyId":"154",
+         "datePayable":"2013-07-15 00:00:00.0"
+      },
+      {  
+         "dividendType":"CASH",
+         "securityID":"165",
+         "disclosureNo":"2879-2013",
+         "dividendId":"PSE_DVDND2012022780",
+         "dividendValue":"P0.35 per common share",
+         "companyName":"San Miguel Corporation",
+         "exDividendDate":"2013-04-23 00:00:00.0",
+         "disclosureLocation":"/resource/disclosures/2013/pdf/dc2013-2879_SMC.pdf",
+         "recordDate":"2013-04-26 00:00:00.0",
+         "disclosureID":"PSE_DSCLR20130003693",
+         "securitySymbol":"SMC",
+         "securityName":"SAN MIGUEL CORPORATION",
+         "companyId":"154",
+         "datePayable":"2013-05-06 00:00:00.0"
+      }
+   ]
+}
+```
+
 ## Company Info: Fetch Headers
 ```
 POST
