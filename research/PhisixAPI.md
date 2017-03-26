@@ -36,6 +36,50 @@ query:bdo
 }
 ```
 
+## Company Info: Fetch Headers
+```
+POST
+http://www.pse.com.ph/stockMarket/companyInfo.html?method=fetchHeaderData&ajax=true
+```
+
+###### Request:
+```
+Query Params:
+method:fetchHeaderData
+ajax:true
+
+Form Params:
+company:154
+security:165
+```
+
+###### Response:
+```
+{  
+   "count":1,
+   "records":[  
+      {  
+         "headerSqLow":"103.0000000000",
+         "headerFiftyTwoWeekHigh":"108.0000000000",
+         "headerChangeClose":"-0.4000000000",
+         "headerChangeClosePercChangeClose":"",
+         "lastTradedDate":"2017-03-23 00:00:00.0",
+         "headerTotalValue":"38,322,707.0000000000",
+         "headerLastTradePrice":"104.0000000000",
+         "headerSqHigh":"104.2000000000",
+         "headerPercChangeClose":"-0.3831400000",
+         "headerFiftyTwoWeekLow":"65.0000000000",
+         "headerSqPrevious":"104.4000000000",
+         "securitySymbol":"SMC",
+         "headerCurrentPe":"41.1067193676",
+         "headerSqOpen":"103.0000000000",
+         "headerAvgPrice":"103.1816779301",
+         "headerTotalVolume":"371,410.0000000000"
+      }
+   ]
+}
+```
+
 ## Company Info: Year Totals
 ```
 POST
