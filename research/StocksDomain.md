@@ -16,19 +16,22 @@ Entities: Version 0.1
 
 ```
 
-```
-Company
-- name
-- description
-- sector
-- subSector
-- incorporationDate
-- numberOfDirectors
-- stockHoldersMeeting
-- fiscalYear
-- officers
-- boardOfDirectors
 
+###### Company
+|  Field                |  Type             |  Description  |
+|-----------------------|-------------------|---------------|
+| name                  |  String           |               |
+| description           |  String           |               |
+| sector                |  String           |               |
+| subSector             |  String           |               |
+| incorporationDate     |  String           |               |
+| numberOfDirectors     |  Integer          |               |
+| stockHoldersMeeting   |  Date             |               |
+| fiscalYear            |  Date             |               |
+| officers              |  List<String>     |               |
+| boardOfDirectors      |  List<String>     |               |
+
+```
 Sec Data
 - ???
 
@@ -40,8 +43,14 @@ unique identifier (https://en.wikipedia.org/wiki/International_Securities_Identi
 - type
 S(Common Shares), W(Warrants), M(Mutual Fund), P(Preferred Shares), G(Government Bond), 
 D(Common Dollar), R(Philippine Deposit Receipts)
+- status
+O(Open)
 - sector
 - subSector
+- listingDate
+- boardLot
+- parValue
+- foreignOwnershipLimit
 
 
 Dividend
