@@ -34,25 +34,24 @@ Entities: Version 0.1
 ```
 Sec Data
 - ???
+```
 
-Security
-- name
-- symbol
-- ISIN
-unique identifier (https://en.wikipedia.org/wiki/International_Securities_Identification_Number)
-- type
-S(Common Shares), W(Warrants), M(Mutual Fund), P(Preferred Shares), G(Government Bond), 
-D(Common Dollar), R(Philippine Deposit Receipts)
-- status
-O(Open)
-- sector
-- subSector
-- listingDate
-- boardLot
-- parValue
-- foreignOwnershipLimit
+###### Security
+|  Field                |  Type             |  Description  |
+|-----------------------|-------------------|---------------|
+| name                  |  String           |               |
+| symbol                |  String           |               |
+| ISIN                  |  String           | unique identifier (https://en.wikipedia.org/wiki/International_Securities_Identification_Number)              |
+| type                  |  String           |         S(Common Shares), W(Warrants), M(Mutual Fund), P(Preferred Shares), G(Government Bond), D(Common Dollar), R(Philippine Deposit Receipts)     |
+| status                |  String           |     O(Open)   |
+| sector                |  Integer          |               |
+| subSector             |  Date             |               |
+| listingDate           |  Date             |               |
+| boardLot              |  List<String>     |               |
+| parValue              |  List<String>     |               |
+| foreignOwnershipLimit |  List<String>     |               |
 
-
+```
 Dividend
 https://en.wikipedia.org/wiki/Dividend
 - type (CASH, PROPERTY, STOCK, INTERIM, OTHER)
