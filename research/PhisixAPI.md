@@ -1,4 +1,4 @@
-# Phisix API
+# PSE (formerly Phisix) API
 http://www.pse.com.ph/stockMarket/home.html
 
 ## List Securities/Company
