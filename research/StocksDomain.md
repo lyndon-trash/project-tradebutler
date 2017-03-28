@@ -1,16 +1,17 @@
 # Domain Research: Company, Securities, and Stock Prices
 
 Entities: Version 0.1
-```                          +----------+
+```
+                             +----------+
                        |----<| Dividend |
                        |     +----------+
                        |
  +-------- +       +----------+         +------------------ +
- | Company | ----< | Security | ------> | Historical Price  |
+ | Company | ----< | Security | ------< | Historical Price  |
  +---------+       +----------+         +-------------------+
                        | 
                        |     +-----------+
-                       |-----| Sec Data  |
+                       |---1-| Sec Data  |
                              +-----------+
 
 ```
