@@ -22,8 +22,9 @@ Company
 
 Security
 - name
-- code
+- symbol
 - ISIN
+unique identifier (https://en.wikipedia.org/wiki/International_Securities_Identification_Number)
 - type
 S(Common Shares), W(Warrants), M(Mutual Fund), P(Preferred Shares), G(Government Bond), 
 D(Common Dollar), R(Philippine Deposit Receipts)
