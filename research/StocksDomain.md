@@ -53,7 +53,6 @@ Sec Data
 
 
 ###### Dividend
-https://en.wikipedia.org/wiki/Dividend
 |  Field                |  Type             |  Description  |
 |-----------------------|-------------------|---------------|
 | type                  |  String           |  CASH, PROPERTY, STOCK, INTERIM, OTHER              |
