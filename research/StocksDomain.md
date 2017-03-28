@@ -21,15 +21,28 @@ Company
 - name
 
 Security
-- company
 - name
 - code
 - ISIN
-- issueType (
+- issueType 
 
-SecurityPrice
+Dividend
+- type
+- value
+- exDate
+- recordDate
+- payableDate
+
+Historical Price
 - security
 - company
 - price
 - date
+- open
+- high
+- low
+- volume
+- value
+
+Sec Data
 ```
