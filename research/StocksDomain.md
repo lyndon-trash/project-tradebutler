@@ -26,6 +26,8 @@ Security
 - ISIN
 - type
 S(Common Shares), W(Warrants), M(Mutual Fund), P(Preferred Shares), G(Government Bond), D(Common Dollar), R(Philippine Deposit Receipts)
+- sector
+- subSector
 
 Dividend
 - type
