@@ -31,8 +31,12 @@ D(Common Dollar), R(Philippine Deposit Receipts)
 - sector
 - subSector
 
+Sec Data
+- 
+
 Dividend
-- type
+https://en.wikipedia.org/wiki/Dividend
+- type (CASH, PROPERTY, STOCK, INTERIM, OTHER)
 - value
 - exDate
 - recordDate
