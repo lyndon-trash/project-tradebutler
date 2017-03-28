@@ -13,6 +13,8 @@ Entities: Version 0.1
 
 
 ###### Company
+Company whose shares are traded on an official stock exchange. It must adhere to the listing requirements of that exchange, which may include how many shares are listed and a minimum earnings level.
+
 |  Field                |  Type             |  Description  |
 |-----------------------|-------------------|---------------|
 | name                  |  String           |               |
@@ -28,6 +30,8 @@ Entities: Version 0.1
 
 
 ###### Security
+A financial instrument that represents an ownership position in a publicly-traded corporation (stock), a creditor relationship with governmental body or a corporation (bond), or rights to ownership as represented by an option. A security is a fungible, negotiable financial instrument that represents some type of financial value. The company or entity that issues the security is known as the issuer.
+
 |  Field                |  Type             |  Description  |
 |-----------------------|-------------------|---------------|
 | company               |  Company           |               |
@@ -45,6 +49,8 @@ Entities: Version 0.1
 
 
 ###### Dividend
+A distribution of a portion of a company's earnings, decided by the board of directors, to a class of its shareholders. Dividends can be issued as cash payments, as shares of stock, or other property.
+
 |  Field                |  Type             |  Description  |
 |-----------------------|-------------------|---------------|
 | security              |  Security         |               |
