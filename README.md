@@ -12,7 +12,7 @@ A trading assistant platform for assisting busy individuals with their stock por
 ## Roadmap
 #### Version 0.1:
 - MasterList: PH Stock List
-- Stock Prices
+- Stock Prices (Daily Historical)
 
 [System Architecture v0.1](ARCHITECTURE.md)
 
