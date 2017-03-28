@@ -39,6 +39,7 @@ Sec Data
 ###### Security
 |  Field                |  Type             |  Description  |
 |-----------------------|-------------------|---------------|
+| company               |  Company           |               |
 | name                  |  String           |               |
 | symbol                |  String           |               |
 | ISIN                  |  String           | unique identifier (https://en.wikipedia.org/wiki/International_Securities_Identification_Number) |
@@ -55,24 +56,28 @@ Sec Data
 ###### Dividend
 |  Field                |  Type             |  Description  |
 |-----------------------|-------------------|---------------|
-| type                  |  String           |  CASH, PROPERTY, STOCK, INTERIM, OTHER              |
+| security              |  Security         |               |
+| type                  |  String           |  CASH, PROPERTY, STOCK, INTERIM, OTHER  |
 | value                 |  String?          |               |
 | exDate                |  LocalDate        |               |
 | recordDate            |  LocalDate        |               |
 | payableDate           |  LocalDate        |               |
 
-```
-Historical Price
-- security
-- company
-- price
-- date
-- open
-- high
-- low
-- volume
-- value
 
+###### Historical Price
+|  Field                |  Type             |  Description  |
+|-----------------------|-------------------|---------------|
+| security              |  Security         |               |
+| date                  |  LocalDate        |               |
+| open                  |  BigDecimal       |               |
+| close                 |  BigDecimal       |               |
+| high                  |  BigDecimal       |               |
+| low                   |  BigDecimal       |               |
+| volume                |  BigInteger       |               |
+| price                 |  BigDecimal       |               |
+| value                 |  BigDecimal       |               |
+
+```
 Sec Data
 ```
 
