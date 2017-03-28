@@ -12,7 +12,7 @@ Entities: Version 0.1
 ```
 
 
-###### Company
+### Company
 Company whose shares are traded on an official stock exchange. It must adhere to the listing requirements of that exchange, which may include how many shares are listed and a minimum earnings level.
 
 |  Field                |  Type             |  Description  |
@@ -29,7 +29,7 @@ Company whose shares are traded on an official stock exchange. It must adhere to
 | boardOfDirectors      |  List<String>     |               |
 
 
-###### Security
+### Security
 A financial instrument that represents an ownership position in a publicly-traded corporation (stock), a creditor relationship with governmental body or a corporation (bond), or rights to ownership as represented by an option. A security is a fungible, negotiable financial instrument that represents some type of financial value. The company or entity that issues the security is known as the issuer.
 
 |  Field                |  Type             |  Description  |
@@ -48,7 +48,7 @@ A financial instrument that represents an ownership position in a publicly-trade
 | foreignOwnershipLimit |  Float            | 0 to 1        |
 
 
-###### Dividend
+### Dividend
 A distribution of a portion of a company's earnings, decided by the board of directors, to a class of its shareholders. Dividends can be issued as cash payments, as shares of stock, or other property.
 
 |  Field                |  Type             |  Description  |
@@ -61,7 +61,7 @@ A distribution of a portion of a company's earnings, decided by the board of dir
 | payableDate           |  LocalDate        |               |
 
 
-###### Historical Price
+### Historical Price
 |  Field                |  Type             |  Description  |
 |-----------------------|-------------------|---------------|
 | security              |  Security         |               |
@@ -75,7 +75,7 @@ A distribution of a portion of a company's earnings, decided by the board of dir
 | value                 |  BigDecimal       |               |
 
 
-Sectors:
+###### Sectors:
 ```
 Financials
 Industrial
@@ -87,7 +87,7 @@ Small, Medium &amp; Emerging Board
 ETF
 ```
 
-Subsectors:
+###### Subsectors:
 ```
 Banks
 Other Financial Institutions
