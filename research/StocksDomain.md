@@ -9,11 +9,6 @@ Entities: Version 0.1
  +-------- +       +----------+         +-------------------+
  | Company | ----< | Security | ------< | Historical Price  |
  +---------+       +----------+         +-------------------+
-                       | 
-                       |      +-----------+
-                       |----< | Sec Data  |
-                              +-----------+
-
 ```
 
 
@@ -31,10 +26,6 @@ Entities: Version 0.1
 | officers              |  List<String>     |               |
 | boardOfDirectors      |  List<String>     |               |
 
-```
-Sec Data
-- ???
-```
 
 ###### Security
 |  Field                |  Type             |  Description  |
