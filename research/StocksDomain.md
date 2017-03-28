@@ -2,17 +2,17 @@
 
 Entities: Version 0.1
 ```
-                                        +----------+
-                       |--------------< | Dividend |
-                       |                +----------+
-                       |
- +-------- +       +----------+         +-------------------+
- | Company | ----< | Security | ------< | Historical Price  |
- +---------+       +----------+         +-------------------+
+                                            +----------+
+                           |--------------< | Dividend |
+                           |                +----------+
+                           |
+ +-------------+       +----------+         +-------------------+
+ | Corporation | ----< | Security | ------< | Historical Price  |
+ +-------------+       +----------+         +-------------------+
 ```
 
 
-### Company
+### Corporation
 Company whose shares are traded on an official stock exchange. It must adhere to the listing requirements of that exchange, which may include how many shares are listed and a minimum earnings level.
 
 |  Field                |  Type             |  Description  |
@@ -21,7 +21,7 @@ Company whose shares are traded on an official stock exchange. It must adhere to
 | description           |  String           |               |
 | sector                |  String           |               |
 | subSector             |  String           |               |
-| incorporationDate     |  String           |               |
+| incorporationDate     |  LocalDate        |               |
 | numberOfDirectors     |  Integer          |               |
 | stockHoldersMeeting   |  Date             |               |
 | fiscalYear            |  Date             |               |
@@ -34,7 +34,7 @@ A financial instrument that represents an ownership position in a publicly-trade
 
 |  Field                |  Type             |  Description  |
 |-----------------------|-------------------|---------------|
-| company               |  Company           |               |
+| company               |  Company          |               |
 | name                  |  String           |               |
 | symbol                |  String           |               |
 | ISIN                  |  String           | unique identifier (https://en.wikipedia.org/wiki/International_Securities_Identification_Number) |
