@@ -2,9 +2,9 @@
 
 Entities: Version 0.1
 ```
-                              +----------+
-                       |----< | Dividend |
-                       |      +----------+
+                                        +----------+
+                       |--------------< | Dividend |
+                       |                +----------+
                        |
  +-------- +       +----------+         +-------------------+
  | Company | ----< | Security | ------< | Historical Price  |
@@ -69,7 +69,7 @@ Entities: Version 0.1
 | value                 |  BigDecimal       |               |
 
 
-Sector List:
+Sectors:
 ```
 Financials
 Industrial
@@ -81,17 +81,15 @@ Small, Medium &amp; Emerging Board
 ETF
 ```
 
-Subsector List:
+Subsectors:
 ```
-<select id="subsector" name="subsector" style="width:300px;">
-<option value="ALL">ALL</option>
-<option value="Banks">Banks</option>
-<option value="Other Financial Institutions">Other Financial Institutions</option>
-<option value="Electricity, Energy, Power &amp; Water">Electricity, Energy, Power &amp; Water</option>
-<option value="Food, Beverage &amp; Tobacco">Food, Beverage &amp; Tobacco</option>
-<option value="Construction, Infra. &amp; Allied Services">Construction, Infra. &amp; Allied Services</option>
-<option value="Chemicals">Chemicals</option>
-<option value="Other Industrials">Other Industrials</option>
+Banks
+Other Financial Institutions
+Electricity, Energy, Power & Water
+Food, Beverage & Tobacco
+Construction, Infra. & Allied Services
+Chemicals
+Other Industrials
 <option value="Holding Firms">Holding Firms</option>
 <option value="Property">Property</option>
 <option value="Media">Media</option>
