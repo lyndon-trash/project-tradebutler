@@ -51,15 +51,18 @@ Sec Data
 | parValue              |  BigDecimal       |               |
 | foreignOwnershipLimit |  Float            | 0 to 1        |
 
-```
-Dividend
-https://en.wikipedia.org/wiki/Dividend
-- type (CASH, PROPERTY, STOCK, INTERIM, OTHER)
-- value
-- exDate
-- recordDate
-- payableDate
 
+###### Dividend
+https://en.wikipedia.org/wiki/Dividend
+|  Field                |  Type             |  Description  |
+|-----------------------|-------------------|---------------|
+| type                  |  String           |  CASH, PROPERTY, STOCK, INTERIM, OTHER              |
+| value                 |  String?          |               |
+| exDate                |  LocalDate        |               |
+| recordDate            |  LocalDate        |               |
+| payableDate           |  LocalDate        |               |
+
+```
 Historical Price
 - security
 - company
