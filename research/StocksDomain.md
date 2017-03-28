@@ -68,23 +68,17 @@ Entities: Version 0.1
 | price                 |  BigDecimal       |               |
 | value                 |  BigDecimal       |               |
 
-```
-Sec Data
-```
 
 Sector List:
 ```
-<select id="sector" name="sector" style="width:300px;">
-<option value="ALL">ALL</option>
-<option value="Financials">Financials</option>
-<option value="Industrial">Industrial</option>
-<option value="Holding Firms">Holding Firms</option>
-<option value="Property">Property</option>
-<option value="Services">Services</option>
-<option value="Mining and Oil">Mining and Oil</option>
-<option value="Small, Medium &amp; Emerging Board">Small, Medium &amp; Emerging Board</option>
-<option value="ETF">ETF</option>
-</select>
+Financials
+Industrial
+Holding Firms
+Property
+Services
+Mining and Oil
+Small, Medium &amp; Emerging Board
+ETF
 ```
 
 Subsector List:
