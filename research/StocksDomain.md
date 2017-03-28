@@ -26,10 +26,11 @@ Company
 - numberOfDirectors
 - stockHoldersMeeting
 - fiscalYear
-
-Sec Data
 - officers
 - boardOfDirectors
+
+Sec Data
+- ???
 
 Security
 - name
