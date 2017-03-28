@@ -10,7 +10,7 @@ A trading assistant platform for assisting busy individuals with their stock por
 - Research Consolidation: easy way to read updates and be alerted on selected companies
 
 ## Roadmap
-#### Version 0.1: Basic Stock Data
+#### (CURRENT) Version 0.1: Basic Stock Data
 - MasterList: PH Stock List
 - Stock Prices (Daily Historical)
 
