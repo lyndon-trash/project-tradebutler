@@ -19,6 +19,17 @@ Entities: Version 0.1
 ```
 Company
 - name
+- description
+- sector
+- subSector
+- incorporationDate
+- numberOfDirectors
+- stockHoldersMeeting
+- fiscalYear
+
+Sec Data
+- officers
+- boardOfDirectors
 
 Security
 - name
@@ -31,8 +42,6 @@ D(Common Dollar), R(Philippine Deposit Receipts)
 - sector
 - subSector
 
-Sec Data
-- 
 
 Dividend
 https://en.wikipedia.org/wiki/Dividend
