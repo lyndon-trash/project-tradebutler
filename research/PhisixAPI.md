@@ -104,6 +104,42 @@ query:bdo
 }
 ```
 
+## Company Data:
+```
+POST
+http://www.pse.com.ph/stockMarket/companyInfoSecurityProfile.html?method=getSecuritiesByCompany&ajax=true
+```
+###### Request:
+###### Response:
+```json
+{  
+   "count":1,
+   "records":[  
+      {  
+         "foreignLimit":40,
+         "yearEndEPSDate":"2015-12-31 00:00:00.0",
+         "listingDate":"2002-05-21 00:00:00.0",
+         "securityID":"468",
+         "interimPeriod":"9 months Sep-30",
+         "listedShares":4.366889524E9,
+         "subsector":"ph.com.headway.model.Subsector@768f7242[subsectorID=1]",
+         "yearEndEPS":6.84,
+         "priorClose":120,
+         "securityStatus":"O",
+         "freeFloatLevel":45,
+         "securityISIN":"PHY077751022",
+         "interimEPS":5.2,
+         "securityType":"S",
+         "parValue":10,
+         "boardLot":10,
+         "securitySymbol":"BDO",
+         "stockTransferAgent":"ph.com.headway.model.StockTransferAgent@439687dd[staID=PSE_STA2009000000026]",
+         "outstandingShares":4.367024454E9
+      }
+   ]
+}
+```
+
 ## Historical Data: Security Quote
 ```
 POST
