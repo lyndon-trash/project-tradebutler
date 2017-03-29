@@ -57,17 +57,19 @@ A distribution of a portion of a company's earnings, decided by the board of dir
 
 
 ### Historical Price
-| Field                 | Type              |  Description  |
-|-----------------------|-------------------|---------------|
-| security              | Security          |               |
-| date                  | LocalDate         |               |
-| open                  | BigDecimal        |               |
-| close                 | BigDecimal        |               |
-| high                  | BigDecimal        |               |
-| low                   | BigDecimal        |               |
-| volume                | BigInteger        |               |
-| price                 | BigDecimal        |               |
-| value                 | BigDecimal        |               |
+| Field                 | Type              |  Description            |
+|-----------------------|-------------------|-------------------------|
+| security              | Security          |                         |
+| date                  | LocalDate         |                         |
+| prev                  | BigDecimal        | previous closing price  |
+| open                  | BigDecimal        |                         |
+| close                 | BigDecimal        |                         |
+| high                  | BigDecimal        |                         |
+| low                   | BigDecimal        |                         |
+| volume                | BigInteger        |                         |
+| price                 | BigDecimal        | average price           |
+| value                 | BigDecimal        |                         |
+| change                | Double            | percentage of change    |
 
 
 ###### Sectors:
