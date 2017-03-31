@@ -13,13 +13,15 @@ A trading assistant platform for assisting busy individuals with their stock por
 ## Roadmap
 #### (CURRENT) Version 0.1: Basic Stock Data
 - MasterList: PH Stock List
-- Stock Prices (Daily Historical)
+- Stock Prices (Daily Closing)
 
 [System Architecture v0.1](ARCHITECTURE.md)
 
 #### Version 0.2: User Management Endpoints
 - User Management
 - User Portfolio
+- Target Portfolio (Custom Portfolio, Shareable)
+- PSE Index (Model Portfolio)
 - Warning System for Price Ranges
 
 #### Version 0.3: Mobile App
