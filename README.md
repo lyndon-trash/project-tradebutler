@@ -7,6 +7,7 @@ A trading assistant platform for assisting busy individuals with their stock por
 #### Problems:
 - Correlate Historical Data with Historical Information
 - Entry/Exit Strategy: figuring out when to buy and sell stocks
+- Manage Portfolio Composition
 - Pickles: identifying pickled stocks
 - Research Consolidation: easy way to read updates and be alerted on selected companies
 
@@ -19,7 +20,7 @@ A trading assistant platform for assisting busy individuals with their stock por
 
 #### Version 0.2: User Management Endpoints
 - User Management
-- User Portfolio
+- User Portfolio (Store By Transaction, Add Target BUY/SELL Points)
 - Target Portfolio (Custom Portfolio, Shareable)
 - PSE Index (Model Portfolio)
 - Warning System for Price Ranges
