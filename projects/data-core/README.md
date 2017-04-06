@@ -4,9 +4,10 @@ Center of the Trade Butler System. Stores all polished data.
 ## Scope
 - entity storage
 ```
-Company
+Corporation
 Security
-SecurityPrice
+HistoricalPrice
+Dividend
 ```
 
 ## Build and Run
