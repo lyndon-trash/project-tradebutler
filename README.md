@@ -16,6 +16,9 @@ Beginner Investors Mostly Make the Following Common Mistakes:
 - Pickles: identifying pickled stocks
 - Research Consolidation: easy way to read updates and be alerted on selected companies
 
+#### Components:
+- [Data Core](projects/data-core)
+
 ## Roadmap
 #### (CURRENT) Version 0.1: Basic Stock Data
 - MasterList: PH Stock List
