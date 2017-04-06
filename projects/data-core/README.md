@@ -22,4 +22,5 @@ test
 
 ## Others
 - [Developer Notes](DEVELOPER-NOTES.md)
-- [Architecture](../../../../blob/master/ARCHITECTURE.md)
+- [Architecture](../../ARCHITECTURE.md)
+- [Domain Model: Data Core](../../research/StocksDomain.md)
