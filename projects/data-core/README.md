@@ -19,3 +19,7 @@ mvnw spring-boot:run
 ```
 test
 ```
+
+## Others
+- [Developer Notes](DEVELOPER-NOTES.md)
+- [Architecture](../../../../blob/master/ARCHITECTURE.md)
