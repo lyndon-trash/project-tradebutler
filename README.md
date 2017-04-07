@@ -2,8 +2,8 @@
 A trading assistant platform for assisting busy individuals with their stock portfolios. This problem is close to my heart and inspired by the manga "[Investor Z](http://animanga.wikia.com/wiki/Investor_Z)".
 
 Beginner Investors Mostly Make the Following Common Mistakes:
-- Not Making an Entry/Exit Plan
-- Failure to Diversify
+- Failure to Make an Entry/Exit Strategy
+- Failure to Plan for a Diversified Portfolio
 - Failure to Research
 
 [System Architecture](ARCHITECTURE.md)
