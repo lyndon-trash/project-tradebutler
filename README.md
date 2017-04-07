@@ -8,6 +8,8 @@ Beginner Investors Mostly Make the Following Common Mistakes:
 
 [System Architecture](ARCHITECTURE.md)
 
+[Developer Notes](DEVELOPER-NOTES.md)
+
 
 #### Problems:
 - Correlate Historical Data with Historical Information
