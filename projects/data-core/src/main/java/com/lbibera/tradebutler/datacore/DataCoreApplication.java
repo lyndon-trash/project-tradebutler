@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProjectAlfredApplication {
+public class DataCoreApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProjectAlfredApplication.class, args);
+		SpringApplication.run(DataCoreApplication.class, args);
 	}
 }

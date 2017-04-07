@@ -1,0 +1,29 @@
+#
+# All the configs that we need to set for prod
+# Even if most of these are set on default by Boot,
+# I am still explicitly set this as a reference for
+# PROD property configurations
+#
+
+#
+# Web Server
+# Using an embedded web server to host the application
+#
+server:
+  port: 8081
+
+#
+# Database
+# Using Postgres on dev to avoid issues
+# encountered with mixing databases
+#
+spring.datasource:
+  name: dev-db
+  driver-class-name: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/tradebutler_data_core_dev
+  username: tradebutler
+  password: tradebutlersecret
+
+spring.jpa:
+  properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+  hibernate.ddl-auto: create-drop

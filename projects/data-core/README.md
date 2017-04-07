@@ -23,5 +23,6 @@ test
 
 ## Others
 - [Developer Notes](DEVELOPER-NOTES.md)
+- [Setup: Data Core](SETUP.md)
 - [Architecture](../../ARCHITECTURE.md)
 - [Domain Model: Data Core](../../research/StocksDomain.md)
