@@ -16,6 +16,9 @@ password = tradebutlersecret
 -- postgres started using the term 'role' around version 9.x
 CREATE ROLE tradebutler PASSWORD 'tradebutlersecret'
    VALID UNTIL 'infinity';
+   
+-- in case the default user create has no login permission
+ALTER ROLE tradebutler WITH LOGIN;
 ```
 - create database
 ```sql
