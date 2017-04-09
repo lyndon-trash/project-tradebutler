@@ -40,7 +40,7 @@ public class CorporationRESTDocumentation {
     }
 
     @Test
-    public void shouldBeFound() throws Exception {
+    public void getWithCorporationsShouldReturnAValidResponse() throws Exception {
         this.mockMvc
                 .perform(get("/corporations").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())

@@ -13,7 +13,7 @@ import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 public class CorporationTest {
 
     @Test
-    void hasAllFields() {
+    void gettersWithLombokShouldWork() {
         Corporation corporation = new Corporation();
         corporation.setName("test name");
         corporation.setDescription("test description");

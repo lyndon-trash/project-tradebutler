@@ -7,9 +7,17 @@ Before starting with development, skim through the contents below
 
 ## Testing
 ### Unit Testing
-<Insert description and instructions here>
-
 [JUnit5](http://junit.org/junit5/docs/current/user-guide/) + [Spring Test](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/unit-testing.html)
+- Test naming convention
+```java
+//Unit Test
+class MyClassTest {
+
+    //method <method>With<input>Should<behavior>
+    void registerWithExistingUsernameShouldThrowAnException();
+}
+```
+- Ideally we should segregate Integration tests from Unit tests, but its already 2017 and machines run these tests extremely fast
 
 ### Spring REST Docs
 "The aim of Spring REST Docs is to help you to produce documentation for your RESTful services 
@@ -86,3 +94,4 @@ See also: #7, #3, #6
 - [Spring REST Docs](http://docs.spring.io/spring-restdocs/docs/current/reference/html5/#getting-started)
 - [DZone: Get Your Java Package Structures right](https://dzone.com/articles/package-structure)
 - [How to Write a Commit Message](https://chris.beams.io/posts/git-commit/)
+- [Naming Tests](https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/)

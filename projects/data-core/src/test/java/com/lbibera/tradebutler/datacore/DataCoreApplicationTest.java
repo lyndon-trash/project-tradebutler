@@ -7,10 +7,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class DataCoreApplicationTests {
+public class DataCoreApplicationTest {
 
 	@Test
-	public void contextLoads() {
+	public void applicationShouldLoadContext() {
 	}
 
 }
