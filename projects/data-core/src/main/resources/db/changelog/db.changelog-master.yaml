@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: lbibera
+      changes:
+        - createTable:
+            tableName: corporation
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: incorporation_date
+                  type: date
+              - column:
+                  name: name
+                  type: varchar(50)
+              - column:
+                  name: description
+                  type: varchar(50)
+              - column:
+                  name: sector
+                  type: varchar(500)
+              - column:
+                  name: sub_sector
+                  type: varchar(500)

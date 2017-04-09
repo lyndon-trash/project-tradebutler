@@ -5,6 +5,9 @@ Before starting with development, skim through the contents below
 - consistent
 - reflects the architecture
 
+## Database Versioning
+- [Columns](http://www.liquibase.org/documentation/column.html)
+
 ## Testing
 ### Unit Testing
 [JUnit5](http://junit.org/junit5/docs/current/user-guide/) + [Spring Test](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/unit-testing.html)
@@ -46,6 +49,7 @@ include::{snippets}/corporations-list/http-response.adoc[]
 ```
 
 ## Technical Debts
+- Rule 1: DON'T DO IT
 <Insert notes on dealing with technical debts here>
 
 ## Source Control

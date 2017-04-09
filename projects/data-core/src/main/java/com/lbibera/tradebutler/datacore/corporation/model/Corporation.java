@@ -10,7 +10,7 @@ import java.util.Date;
 public class Corporation {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
     @Temporal(TemporalType.DATE)
