@@ -94,8 +94,49 @@ Resolves: #2
 See also: #7, #3, #6
 ```
 
+## JavaDocs
+Document all your public and protected methods.
+- meaningful first line
+- simple html tags, don't bother closing them properly
+- sample code
+```java
+/**
+* A Time Lord.
+* <p>
+* A long description.
+* <p>
+* Can regenerate when killed.
+* <p>
+* Qualities of a Time Lord:
+* <ul>
+*     <li>Witty
+*     <li>Smart
+*     <li>Funny
+*     <li>Long lifespan
+* </ul>
+*/
+class TheDoctor {
+    
+    private Integer incarnation;
+    
+    /**
+    * Save the world with the help of a companion.
+    * <p>
+    * 
+    * @param companionName the name of the new companion
+    * @return the result of the endeavor to save the universe
+    * @throws CompanionNotFoundException when The Doctor fails to find the specified companion
+    */
+    public Result saveTheUniverse(String companionName) throws CompanionNotFoundException {
+        
+    }
+}
+```
+
 ###### Resources
 - [Spring REST Docs](http://docs.spring.io/spring-restdocs/docs/current/reference/html5/#getting-started)
 - [DZone: Get Your Java Package Structures right](https://dzone.com/articles/package-structure)
 - [How to Write a Commit Message](https://chris.beams.io/posts/git-commit/)
 - [Naming Tests](https://www.petrikainulainen.net/programming/testing/writing-clean-tests-naming-matters/)
+- [JavaDoc Coding Standards](http://blog.joda.org/2012/11/javadoc-coding-standards.html)
+- [Oracle: Good Comments](http://www.oracle.com/technetwork/articles/java/index-137868.html)
