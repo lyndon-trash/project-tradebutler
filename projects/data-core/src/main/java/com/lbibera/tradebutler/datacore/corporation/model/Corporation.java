@@ -5,7 +5,6 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -20,12 +19,11 @@ public class Corporation {
      * A corporation may issue multiple securities,
      * usually one common stock and many proffered shares.
      */
-    //@OneToMany(fetch = FetchType.EAGER)
-    //List<Security> securities;
+    @OneToMany(fetch = FetchType.EAGER)
+    List<Security> securities;
 
-    //@Column
-    //LocalDate incorporationDate;
-    Date incorporationDate;
+    @Column
+    LocalDate incorporationDate;
 
     String name;
     String description;
@@ -33,12 +31,12 @@ public class Corporation {
     /**
      * Refer to {@link Sector}
      */
-    //@Enumerated(EnumType.STRING)
-    //Sector sector;
+    @Enumerated(EnumType.STRING)
+    Sector sector;
 
     /**
      * Refer to {@link SubSector}
      */
-    //@Enumerated(EnumType.STRING)
-    //SubSector subSector;
+    @Enumerated(EnumType.STRING)
+    SubSector subSector;
 }

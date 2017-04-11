@@ -20,5 +20,4 @@ public enum Sector {
      * {@link https://en.wikipedia.org/wiki/Exchange-traded_fund}
      */
     ETF,
-
 }

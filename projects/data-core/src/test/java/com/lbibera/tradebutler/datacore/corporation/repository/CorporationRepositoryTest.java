@@ -43,8 +43,8 @@ public class CorporationRepositoryTest {
     public void saveWithMultipleSecuritiesShouldSaveSecuritiesTransitively() {
         Corporation sanMiguelCorporation = new Corporation();
         sanMiguelCorporation.setName("San Miguel Corporation");
-        //sanMiguelCorporation.setSector(Sector.HOLDING_FIRMS);
-        //sanMiguelCorporation.setSubSector(SubSector.HOLDING_FIRMS);
+        sanMiguelCorporation.setSector(Sector.HOLDING_FIRMS);
+        sanMiguelCorporation.setSubSector(SubSector.HOLDING_FIRMS);
 
         Security smc = new Security();
         smc.setSymbol("SMC");
@@ -56,7 +56,7 @@ public class CorporationRepositoryTest {
         smc2d.setIssueType(IssueType.PREFFERED);
         smc2d.setName("SMC Preffered Shares Series 2D");
 
-        //sanMiguelCorporation.setSecurities(Arrays.asList(smc, smc2d));
+        sanMiguelCorporation.setSecurities(Arrays.asList(smc, smc2d));
 
         repository.save(sanMiguelCorporation);
 

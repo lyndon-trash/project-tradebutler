@@ -14,7 +14,7 @@ public enum  TradingStatus {
     HALT,
 
     /**
-     * Similar to a trading halt but longer
+     * Similar to a trading halt but longer/indefinite duration
      */
     SUSPENSION,
 }

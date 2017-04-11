@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Date;
 
-//@Entity
+@Entity
 @Data
 public class Security {
 
@@ -16,8 +16,8 @@ public class Security {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    //@ManyToOne
-    //Corporation corporation;
+    @ManyToOne
+    Corporation corporation;
 
     /**
      * Unique identifier across international markets.
@@ -55,9 +55,8 @@ public class Security {
     String name;
     String symbol;
 
-    //@Column
-    //LocalDate listingDate;
-    Date listingDate;
+    @Column
+    LocalDate listingDate;
 
     /**
      * A board lot is a standardized number of shares defined by a stock exchange as a trading unit.
@@ -77,5 +76,9 @@ public class Security {
      */
     BigDecimal parValue;
 
+    /**
+     * Maximum percentage of shares allowed to foreign investors.
+     * 0 to 1
+     */
     Float foreignOwnershipLimit;
 }
