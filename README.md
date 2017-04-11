@@ -35,8 +35,8 @@ Beginner Investors Mostly Make the Following Common Mistakes:
 - PSE Index (Model Portfolio)
 - Warning System for Price Ranges
 
-#### Version 0.3: Mobile App
-- iOS Mobile Client
+#### Version 0.3: Mobile Client
+- Web Mobile Client
 
 #### Version 1.0: MVP
 - Mobile Gateway
