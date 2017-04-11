@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import com.lbibera.tradebutler.datacore.corporation.model.Sector;
 import com.lbibera.tradebutler.datacore.corporation.model.SubSector;
 import com.lbibera.tradebutler.datacore.corporation.model.Corporation;
-import com.lbibera.tradebutler.datacore.corporation.rest.CorporationRestRepository;
+import com.lbibera.tradebutler.datacore.corporation.rest.CorporationRESTRepository;
 import com.lbibera.tradebutler.datacore.security.model.IssueType;
 import com.lbibera.tradebutler.datacore.security.model.Security;
 import org.junit.Test;
@@ -28,7 +28,7 @@ import java.util.Arrays;
 public class CorporationRepositoryTest {
 
     @Autowired
-    private CorporationRestRepository repository;
+    private CorporationRESTRepository repository;
 
     @Test
     @Sql
