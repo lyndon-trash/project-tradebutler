@@ -4,7 +4,7 @@
 ```
 Data Core
 - master data storage
-- stores the following data: Stocks, StockPrice
+- stores the following data: Corporation, Security, HistoricalPrice, Dividend
 
 
 Data Miner [PSE]
