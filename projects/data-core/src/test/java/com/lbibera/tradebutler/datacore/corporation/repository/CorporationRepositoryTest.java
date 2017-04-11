@@ -5,9 +5,9 @@ import static org.junit.Assert.*;
 import com.lbibera.tradebutler.datacore.corporation.model.Sector;
 import com.lbibera.tradebutler.datacore.corporation.model.SubSector;
 import com.lbibera.tradebutler.datacore.corporation.model.Corporation;
-import com.lbibera.tradebutler.datacore.corporation.rest.CorporationRESTRepository;
-import com.lbibera.tradebutler.datacore.security.model.IssueType;
-import com.lbibera.tradebutler.datacore.security.model.Security;
+import com.lbibera.tradebutler.datacore.corporation.rest.CorporationsRESTRepository;
+import com.lbibera.tradebutler.datacore.stock.model.IssueType;
+import com.lbibera.tradebutler.datacore.stock.model.Stock;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +28,7 @@ import java.util.Arrays;
 public class CorporationRepositoryTest {
 
     @Autowired
-    private CorporationRESTRepository repository;
+    private CorporationsRESTRepository repository;
 
     @Test
     @Sql
@@ -46,19 +46,21 @@ public class CorporationRepositoryTest {
         sanMiguelCorporation.setSector(Sector.HOLDING_FIRMS);
         sanMiguelCorporation.setSubSector(SubSector.HOLDING_FIRMS);
 
-        Security smc = new Security();
+        Stock smc = new Stock();
         smc.setSymbol("SMC");
         smc.setIssueType(IssueType.COMMON);
         smc.setName("San Miguel Corporation");
 
-        Security smc2d = new Security();
+        Stock smc2d = new Stock();
         smc2d.setSymbol("SMC2D");
         smc2d.setIssueType(IssueType.PREFFERED);
         smc2d.setName("SMC Preffered Shares Series 2D");
 
-        sanMiguelCorporation.setSecurities(Arrays.asList(smc, smc2d));
+        sanMiguelCorporation.setStocks(Arrays.asList(smc, smc2d));
 
         repository.save(sanMiguelCorporation);
+
+        System.out.print("corporation:" + sanMiguelCorporation + ": " + smc + smc2d);
 
         assertNotNull(sanMiguelCorporation.getId());
         assertNotNull(smc.getId());

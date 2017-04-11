@@ -1,4 +1,4 @@
-package com.lbibera.tradebutler.datacore.security.model;
+package com.lbibera.tradebutler.datacore.stock.model;
 
 /**
  * Types of Issued Stocks

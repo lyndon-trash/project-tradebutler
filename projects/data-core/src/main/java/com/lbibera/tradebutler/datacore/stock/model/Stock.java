@@ -1,4 +1,4 @@
-package com.lbibera.tradebutler.datacore.security.model;
+package com.lbibera.tradebutler.datacore.stock.model;
 
 import com.lbibera.tradebutler.datacore.corporation.model.Corporation;
 import lombok.Data;
@@ -9,7 +9,7 @@ import java.time.LocalDate;
 
 @Entity
 @Data
-public class Security {
+public class Stock {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,12 +22,12 @@ public class Security {
      * Unique identifier across international markets.
      * International Securities Identification Number
      *
-     * An International Securities Identification Number (ISIN) uniquely identifies a security.
+     * An International Securities Identification Number (ISIN) uniquely identifies a stock.
      * Its structure is defined in ISO 6166. Securities for which ISINs are issued include bonds,
      * commercial paper, stocks and warrants.
      * The ISIN code is a 12-character alpha-numerical code that
      * does not contain information characterizing financial instruments but serves for uniform identification
-     * of a security through normalization of the assigned National Number, where one exists, at trading and settlement.
+     * of a stock through normalization of the assigned National Number, where one exists, at trading and settlement.
      * Securities to which ISINs can be issued include debt securities, shares, options, derivatives and futures.
      * ISIN cannot specify a particular trading location in this case, and another identifier,
      * typically MIC (Market Identifier Code) or the three-letter exchange code,

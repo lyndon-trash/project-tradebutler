@@ -1,2 +1,2 @@
 DELETE FROM corporation;
-DELETE FROM security;
+DELETE FROM stock;

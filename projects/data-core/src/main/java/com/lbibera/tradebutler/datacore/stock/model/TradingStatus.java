@@ -1,4 +1,4 @@
-package com.lbibera.tradebutler.datacore.security.model;
+package com.lbibera.tradebutler.datacore.stock.model;
 
 public enum  TradingStatus {
 
@@ -8,7 +8,7 @@ public enum  TradingStatus {
     OPEN,
 
     /**
-     * Means the temporary stoppage or suspension of the trading of a listed security or suspension of trading in the Exchange
+     * Means the temporary stoppage or suspension of the trading of a listed stock or suspension of trading in the Exchange
      * Not sure about this but PSE allows a trading halt up to 48 hours, otherwise you probably need to file a suspension.
      */
     HALT,

@@ -1,9 +1,10 @@
 package com.lbibera.tradebutler.datacore.corporation.model;
 
-import com.lbibera.tradebutler.datacore.security.model.Security;
+import com.lbibera.tradebutler.datacore.stock.model.Stock;
 import lombok.Data;
 
 import javax.persistence.*;
+import javax.validation.constraints.Max;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -20,12 +21,14 @@ public class Corporation {
      * usually one common stock and many proffered shares.
      */
     @OneToMany(fetch = FetchType.EAGER)
-    List<Security> securities;
+    List<Stock> stocks;
 
     @Column
     LocalDate incorporationDate;
 
     String name;
+
+    @Column(length = 10000)
     String description;
 
     /**

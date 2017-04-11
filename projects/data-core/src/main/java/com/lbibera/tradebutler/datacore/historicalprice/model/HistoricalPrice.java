@@ -1,6 +1,6 @@
 package com.lbibera.tradebutler.datacore.historicalprice.model;
 
-import com.lbibera.tradebutler.datacore.security.model.Security;
+import com.lbibera.tradebutler.datacore.stock.model.Stock;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -17,7 +17,7 @@ public class HistoricalPrice {
     Long id;
 
     @ManyToOne
-    Security security;
+    Stock stock;
 
     @Column
     LocalDate date;
