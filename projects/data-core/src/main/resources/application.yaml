@@ -26,4 +26,5 @@ spring.datasource:
 
 spring.jpa:
   properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
-  hibernate.ddl-auto: validate
+  hibernate.ddl-auto: create
+  #hibernate.ddl-auto: validate
