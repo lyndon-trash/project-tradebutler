@@ -2,12 +2,12 @@
 
 #### Version 0.1:
 ```
-Alfred
+Data Core
 - master data storage
 - stores the following data: Stocks, StockPrice
 
 
-Bautista
+Data Miner [PSE]
 - harvests master data from the Phisix Server
 - possibly illegal **wink**
 - receives mining commands from a Messaging Queue (Kafka)
@@ -20,7 +20,7 @@ Bautista
   Spring Data
       ↑
 +--------------------+          +------------------------------------+          +---------------+
-| Data Core (Alfred) | ← REST ← |  Data Miner[Phisix API] (Bautista) | → REST → | PHISIX SERVER |
+|      Data Core     | ← REST ← |           Data Miner[PSE]          | → REST → | PHISIX SERVER |
 +--------------------+          +------------------------------------+          +---------------+
                                                    ↑
                                              Spring Integration
