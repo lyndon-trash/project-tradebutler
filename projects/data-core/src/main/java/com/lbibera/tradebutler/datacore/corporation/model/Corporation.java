@@ -20,7 +20,7 @@ public class Corporation {
      * A corporation may issue multiple securities,
      * usually one common stock and many proffered shares.
      */
-    @OneToMany(fetch = FetchType.EAGER)
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
     List<Stock> stocks;
 
     @Column

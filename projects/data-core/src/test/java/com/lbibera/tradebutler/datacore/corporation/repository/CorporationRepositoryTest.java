@@ -1,10 +1,8 @@
 package com.lbibera.tradebutler.datacore.corporation.repository;
 
-import static org.junit.Assert.*;
-
+import com.lbibera.tradebutler.datacore.corporation.model.Corporation;
 import com.lbibera.tradebutler.datacore.corporation.model.Sector;
 import com.lbibera.tradebutler.datacore.corporation.model.SubSector;
-import com.lbibera.tradebutler.datacore.corporation.model.Corporation;
 import com.lbibera.tradebutler.datacore.corporation.rest.CorporationsRESTRepository;
 import com.lbibera.tradebutler.datacore.stock.model.IssueType;
 import com.lbibera.tradebutler.datacore.stock.model.Stock;
@@ -17,6 +15,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.transaction.Transactional;
 import java.util.Arrays;
+
+import static org.junit.Assert.assertNotNull;
 
 
 /**
@@ -59,11 +59,14 @@ public class CorporationRepositoryTest {
         sanMiguelCorporation.setStocks(Arrays.asList(smc, smc2d));
 
         repository.save(sanMiguelCorporation);
-
-        System.out.print("corporation:" + sanMiguelCorporation + ": " + smc + smc2d);
-
         assertNotNull(sanMiguelCorporation.getId());
-        assertNotNull(smc.getId());
-        assertNotNull(smc2d.getId());
+
+        Corporation afterSave = repository.findOne(sanMiguelCorporation.getId()).orElse(null);
+
+        assertNotNull(afterSave);
+        assertNotNull("SMC Stock should be present", afterSave.getStocks().get(0));
+        assertNotNull("SMC Stock should be present", afterSave.getStocks().get(1));
+        assertNotNull("SMC Stock should also have an id", afterSave.getStocks().get(0).getId());
+        assertNotNull("SMC Stock should also have an id", afterSave.getStocks().get(1).getId());
     }
 }
