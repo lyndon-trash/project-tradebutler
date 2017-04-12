@@ -34,3 +34,10 @@ spring.jpa:
 #
 spring.jackson:
     serialization.WRITE_DATES_AS_TIMESTAMPS: false
+
+#
+# Logging Level
+# Never use debug on PROD
+#
+logging.level:
+  com.lbibera.tradebutler: DEBUG
