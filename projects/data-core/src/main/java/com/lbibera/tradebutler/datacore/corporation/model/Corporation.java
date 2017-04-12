@@ -4,7 +4,6 @@ import com.lbibera.tradebutler.datacore.stock.model.Stock;
 import lombok.Data;
 
 import javax.persistence.*;
-import javax.validation.constraints.Max;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -20,7 +19,7 @@ public class Corporation {
      * A corporation may issue multiple securities,
      * usually one common stock and many proffered shares.
      */
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST, mappedBy = "corporation")
     List<Stock> stocks;
 
     @Column

@@ -1,11 +1,18 @@
 package com.lbibera.tradebutler.datacore.corporation.rest;
 
+import com.lbibera.tradebutler.datacore.corporation.model.Corporation;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.MediaType;
 import org.springframework.restdocs.JUnitRestDocumentation;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -18,6 +25,15 @@ import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.docu
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import org.springframework.boot.test.mock.mockito.*;
+import org.springframework.test.context.junit4.*;
+
+import java.util.Arrays;
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.*;
+import static org.mockito.BDDMockito.*;
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -29,19 +45,39 @@ public class CorporationRESTDocumentation {
     @Autowired
     private WebApplicationContext context;
 
-    private MockMvc mockMvc;
+    @MockBean
+    private CorporationsRESTRepository mockRepository;
 
+    @Mock
+    private Page<Corporation> mockResults;
+
+    private MockMvc mockMvc;
 
     @Before
     public void setUp() {
         this.mockMvc = MockMvcBuilders.webAppContextSetup(this.context)
                 .apply(documentationConfiguration(this.restDocumentation))
                 .build();
+
+        given(mockResults.getTotalElements()).willReturn(2L);
+        given(mockResults.getTotalPages()).willReturn(1);
+
+        Corporation bdo = new Corporation();
+        Corporation smc = new Corporation();
+        List<Corporation> mockCorporations = Arrays.asList(bdo, smc);
+        given(mockResults.getContent()).willReturn(mockCorporations);
     }
 
     @Test
     public void getWithCorporationsShouldReturnAValidResponse() throws Exception {
+        Pageable page = PageRequest.of(1, 1, Sort.Direction.ASC, "id");
+
+        given(mockRepository.findAll(page)).willReturn(mockResults);
+        given(mockRepository.findAll()).willReturn(mockResults);
+//        given()
+
         this.mockMvc
+//                .perform(get("/corporations?page=1&size=1&sort=id").accept(MediaType.APPLICATION_JSON))
                 .perform(get("/corporations").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andDo(document("corporations-list"));
