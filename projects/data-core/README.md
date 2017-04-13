@@ -5,20 +5,27 @@ Center of the Trade Butler System. Stores all polished data.
 - entity storage
 ```
 Corporation
-Security
+Stocks
 HistoricalPrice
 Dividend
 ```
 
-## Build and Run
+## Build and Run: Maven Plugin for Spring Boot
 ```
 mvnw clean package
 mvnw spring-boot:run
 ```
 
+## Build and Run: IntelliJ
+```
+Main Class: com.lbibera.tradebutler.datacore.DataCoreApplication
+Program Arguments: --debug=true --management.security.enabled=false
+```
+
 ## Configuration
 ```
-test
+Check:
+src/resources/application.yml
 ```
 
 ## Others
