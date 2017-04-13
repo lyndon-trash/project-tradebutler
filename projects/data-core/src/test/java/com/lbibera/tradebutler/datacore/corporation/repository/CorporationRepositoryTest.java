@@ -40,7 +40,7 @@ public class CorporationRepositoryTest {
 
     @Test
     @Sql
-    public void saveWithMultipleSecuritiesShouldSaveSecuritiesTransitively() {
+    public void saveWithMultipleStocksShouldSaveSecuritiesTransitively() {
         Corporation sanMiguelCorporation = new Corporation();
         sanMiguelCorporation.setName("San Miguel Corporation");
         sanMiguelCorporation.setSector(Sector.HOLDING_FIRMS);
