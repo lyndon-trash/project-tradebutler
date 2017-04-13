@@ -22,7 +22,6 @@ public class Corporation {
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST, mappedBy = "corporation")
     List<Stock> stocks;
 
-    @Column
     LocalDate incorporationDate;
 
     String name;

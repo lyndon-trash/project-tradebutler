@@ -19,7 +19,6 @@ public class HistoricalPrice {
     @ManyToOne
     Stock stock;
 
-    @Column
     LocalDate date;
 
     BigDecimal prev;

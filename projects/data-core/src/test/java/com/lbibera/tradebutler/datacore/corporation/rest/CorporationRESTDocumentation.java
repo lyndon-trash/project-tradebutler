@@ -25,19 +25,15 @@ import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.docu
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import org.springframework.boot.test.mock.mockito.*;
-import org.springframework.test.context.junit4.*;
-
 import java.util.Arrays;
 import java.util.List;
 
-import static org.assertj.core.api.Assertions.*;
 import static org.mockito.BDDMockito.*;
 
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class CorporationRESTDocumentation {
+public class CorporationRestDocumentation {
 
     @Rule
     public JUnitRestDocumentation restDocumentation = new JUnitRestDocumentation("target/generated-snippets");
@@ -46,7 +42,7 @@ public class CorporationRESTDocumentation {
     private WebApplicationContext context;
 
     @MockBean
-    private CorporationsRESTRepository mockRepository;
+    private CorporationsRestRepository mockRepository;
 
     @Mock
     private Page<Corporation> mockResults;
@@ -70,15 +66,11 @@ public class CorporationRESTDocumentation {
 
     @Test
     public void getWithCorporationsShouldReturnAValidResponse() throws Exception {
-        Pageable page = PageRequest.of(1, 1, Sort.Direction.ASC, "id");
-
+        Pageable page = PageRequest.of(0, 1, Sort.Direction.ASC, "id");
         given(mockRepository.findAll(page)).willReturn(mockResults);
-        given(mockRepository.findAll()).willReturn(mockResults);
-//        given()
 
         this.mockMvc
-//                .perform(get("/corporations?page=1&size=1&sort=id").accept(MediaType.APPLICATION_JSON))
-                .perform(get("/corporations").accept(MediaType.APPLICATION_JSON))
+                .perform(get("/corporations?page=0&size=10&sort=id").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andDo(document("corporations-list"));
     }

@@ -54,7 +54,6 @@ public class Stock {
     String name;
     String symbol;
 
-    @Column
     LocalDate listingDate;
 
     /**
