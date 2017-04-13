@@ -76,7 +76,7 @@ public class Stock {
 
     /**
      * Maximum percentage of shares allowed to foreign investors.
-     * 0 to 1
+     * 0 to 100.0
      */
     Float foreignOwnershipLimit;
 }

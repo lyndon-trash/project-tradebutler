@@ -18,8 +18,14 @@ mvnw spring-boot:run
 
 ## Build and Run: IntelliJ
 ```
-Main Class: com.lbibera.tradebutler.datacore.DataCoreApplication
-Program Arguments: --debug=true --management.security.enabled=false
+Main Class: 
+com.lbibera.tradebutler.datacore.DataCoreApplication
+
+Program Arguments: 
+--debug=true 
+--management.security.enabled=false 
+--spring.jpa.hibernate.ddl-auto=create 
+--logging.level.com.lbibera.tradebutler=debug
 ```
 
 ## Configuration

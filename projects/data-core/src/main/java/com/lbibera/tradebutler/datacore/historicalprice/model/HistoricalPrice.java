@@ -40,7 +40,7 @@ public class HistoricalPrice {
 
     /**
      * Percent change from previous trading day
-     * -1.0 to 1.0
+     * -100.0 to 1.000
      */
     Float change;
 }
