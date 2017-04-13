@@ -14,6 +14,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
+import javax.transaction.Transactional;
+
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.documentationConfiguration;
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.get;
@@ -39,6 +41,7 @@ public class CorporationRestDocumentation {
                 .build();
     }
 
+    @Transactional
     @Test @Sql("../repository/CorporationRepositoryTest.findByIdShouldReturnCorrectCorporation.sql")
     public void getWithCorporationsShouldReturnAValidResponse() throws Exception {
         this.mockMvc

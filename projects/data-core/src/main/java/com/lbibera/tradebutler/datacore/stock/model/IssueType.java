@@ -24,5 +24,5 @@ public enum IssueType {
      * This is different from common stock which has variable dividends that are declared by the board of directors
      * and never guaranteed. In fact, many companies do not pay out dividends to common stock at all.
      */
-    PREFFERED,
+    PREFERRED,
 }

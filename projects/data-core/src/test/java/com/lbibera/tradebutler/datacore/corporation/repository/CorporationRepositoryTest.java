@@ -53,7 +53,7 @@ public class CorporationRepositoryTest {
 
         Stock smc2d = new Stock();
         smc2d.setSymbol("SMC2D");
-        smc2d.setIssueType(IssueType.PREFFERED);
+        smc2d.setIssueType(IssueType.PREFERRED);
         smc2d.setName("SMC Preffered Shares Series 2D");
 
         sanMiguelCorporation.setStocks(Arrays.asList(smc, smc2d));
