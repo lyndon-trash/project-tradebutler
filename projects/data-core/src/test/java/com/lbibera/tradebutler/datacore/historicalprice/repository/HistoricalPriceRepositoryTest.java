@@ -3,7 +3,6 @@ package com.lbibera.tradebutler.datacore.historicalprice.repository;
 import static org.junit.Assert.*;
 
 import com.lbibera.tradebutler.datacore.historicalprice.model.HistoricalPrice;
-import com.lbibera.tradebutler.datacore.historicalprice.rest.HistoricalPriceRestRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

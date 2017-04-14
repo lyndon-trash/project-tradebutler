@@ -3,7 +3,6 @@ package com.lbibera.tradebutler.datacore.corporation.repository;
 import com.lbibera.tradebutler.datacore.corporation.model.Corporation;
 import com.lbibera.tradebutler.datacore.corporation.model.Sector;
 import com.lbibera.tradebutler.datacore.corporation.model.SubSector;
-import com.lbibera.tradebutler.datacore.corporation.rest.CorporationsRestRepository;
 import com.lbibera.tradebutler.datacore.stock.model.IssueType;
 import com.lbibera.tradebutler.datacore.stock.model.Stock;
 import org.junit.Test;

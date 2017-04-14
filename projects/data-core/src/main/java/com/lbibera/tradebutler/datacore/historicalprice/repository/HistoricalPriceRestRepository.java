@@ -1,4 +1,4 @@
-package com.lbibera.tradebutler.datacore.historicalprice.rest;
+package com.lbibera.tradebutler.datacore.historicalprice.repository;
 
 import com.lbibera.tradebutler.datacore.historicalprice.model.HistoricalPrice;
 import org.springframework.data.repository.PagingAndSortingRepository;

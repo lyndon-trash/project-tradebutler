@@ -3,7 +3,6 @@ package com.lbibera.tradebutler.datacore.stock.repository;
 import static org.junit.Assert.*;
 
 import com.lbibera.tradebutler.datacore.stock.model.Stock;
-import com.lbibera.tradebutler.datacore.stock.rest.StockRestRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
