@@ -25,7 +25,7 @@ public class HistoricalPriceRepositoryTest {
 
     @Test
     public void findAllWithFirstPageShouldReturnAll() {
-        Page<HistoricalPrice> allHistoricalPrice = restRepository.findAll(PageRequest.of(0, 10));
+        Page<HistoricalPrice> allHistoricalPrice = restRepository.findAll(new PageRequest(0, 10));
 
         assertEquals("There should be 5 Historical Prices", 5, allHistoricalPrice.getTotalElements());
     }

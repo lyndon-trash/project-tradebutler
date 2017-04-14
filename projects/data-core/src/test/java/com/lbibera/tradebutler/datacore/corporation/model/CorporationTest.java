@@ -1,18 +1,19 @@
 package com.lbibera.tradebutler.datacore.corporation.model;
 
-import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.Test;
-import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.time.LocalDate;
+
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 /**
  * Demonstrate a simple JUnit5 Test
  */
-@SpringJUnitConfig
+@ExtendWith(SpringExtension.class) //Change this after upgrading to Spring Boot 2.0
 public class CorporationTest {
 
     @Test

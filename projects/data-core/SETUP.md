@@ -30,6 +30,11 @@ CREATE DATABASE tradebutler_data_core_dev
        CONNECTION LIMIT=-1
        TABLESPACE=pg_default;
 ```
+- Build JUnit5 Extension for Spring
+```
+Download: https://github.com/sbrannen/spring-test-junit5
+Run: gradlew install
+```
 
 ###### Resources
 - [Create User](https://www.postgresql.org/docs/current/static/database-roles.html)

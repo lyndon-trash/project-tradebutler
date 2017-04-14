@@ -32,7 +32,7 @@ public class CorporationRepositoryTest {
     @Test
     @Sql
     public void findByIdShouldReturnCorrectCorporation() {
-        Corporation actualCorporation = repository.findOne(1l).orElse(null);
+        Corporation actualCorporation = repository.findOne(1l);
 
         assertNotNull(actualCorporation);
     }
@@ -60,7 +60,7 @@ public class CorporationRepositoryTest {
         repository.save(sanMiguelCorporation);
         assertNotNull(sanMiguelCorporation.getId());
 
-        Corporation afterSave = repository.findOne(sanMiguelCorporation.getId()).orElse(null);
+        Corporation afterSave = repository.findOne(sanMiguelCorporation.getId());
 
         assertNotNull(afterSave);
         assertNotNull("SMC Stock should be present", afterSave.getStocks().get(0));

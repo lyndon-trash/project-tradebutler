@@ -26,7 +26,7 @@ public class StockRepositoryTest {
     @Test
     @Sql
     public void findAllWithFirstPageShouldReturnFirstPage() {
-        Pageable page = PageRequest.of(0, 10);
+        Pageable page = new PageRequest(0, 10);
         Page<Stock> firstPage = repository.findAll(page);
 
         assertEquals("There should be 2 entries", 2, firstPage.getTotalElements());
