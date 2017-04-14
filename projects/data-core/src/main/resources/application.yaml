@@ -27,3 +27,24 @@ spring.datasource:
 spring.jpa:
   properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
   hibernate.ddl-auto: validate
+
+#
+# JacksonMapper issue with LocalDate and other Java8 Date Types
+#
+spring.jackson.serialization.write-dates-as-timestamps: false
+
+#
+# Logging Level
+#
+#
+logging.level:
+  com.lbibera.tradebutler: INFO
+
+#
+# DANGER:
+# - Never use debug on PROD
+# - Always enable security
+#
+debug: false
+management:
+  security.enabled: true

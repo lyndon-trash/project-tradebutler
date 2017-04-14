@@ -1,9 +1,11 @@
 package com.lbibera.tradebutler.datacore.corporation.model;
 
+import com.lbibera.tradebutler.datacore.stock.model.Stock;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Data
@@ -13,11 +15,29 @@ public class Corporation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @Temporal(TemporalType.DATE)
-    Date incorporationDate;
+    /**
+     * A corporation may issue multiple securities,
+     * usually one common stock and many proffered shares.
+     */
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST, mappedBy = "corporation")
+    List<Stock> stocks;
+
+    LocalDate incorporationDate;
 
     String name;
+
+    @Column(length = 10000)
     String description;
-    String sector;
-    String subSector;
+
+    /**
+     * Refer to {@link Sector}
+     */
+    @Enumerated(EnumType.STRING)
+    Sector sector;
+
+    /**
+     * Refer to {@link SubSector}
+     */
+    @Enumerated(EnumType.STRING)
+    SubSector subSector;
 }

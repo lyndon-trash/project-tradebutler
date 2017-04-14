@@ -22,6 +22,8 @@ ALTER ROLE tradebutler WITH LOGIN;
 ```
 - create database
 ```sql
+DROP DATABASE tradebutler_data_core_dev;
+
 CREATE DATABASE tradebutler_data_core_dev
   WITH ENCODING='UTF8'
        OWNER=tradebutler
