@@ -79,4 +79,9 @@ public class Stock {
      * 0 to 100.0
      */
     Float foreignOwnershipLimit;
+
+    public boolean isCommonStock() {
+        if (issueType == null) return false;
+        return getIssueType().equals(IssueType.COMMON);
+    }
 }

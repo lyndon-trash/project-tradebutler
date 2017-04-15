@@ -1,11 +1,14 @@
 package com.lbibera.tradebutler.datacore.corporation.model;
 
+import com.lbibera.tradebutler.datacore.stock.model.IssueType;
 import com.lbibera.tradebutler.datacore.stock.model.Stock;
 import lombok.Data;
+import org.springframework.util.CollectionUtils;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 @Entity
 @Data
@@ -40,4 +43,10 @@ public class Corporation {
      */
     @Enumerated(EnumType.STRING)
     SubSector subSector;
+
+    public Optional<Stock> findPrimaryStock() {
+        if (CollectionUtils.isEmpty(stocks)) return Optional.empty();
+
+        return stocks.stream().filter(Stock::isCommonStock).findFirst();
+    }
 }
