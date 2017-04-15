@@ -16,18 +16,25 @@ import org.springframework.web.context.WebApplicationContext;
 
 import javax.transaction.Transactional;
 
+import static org.hamcrest.Matchers.is;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.documentationConfiguration;
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-
+/**
+ * Ideally we should be mocking the repository,
+ * unfortunately, Spring has no easy way of allowing this.
+ *
+ * Hence, we are stuck with inserting actual data.
+ */
+@Transactional @Sql
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class CorporationRestTest {
 
-
-    @Rule
+    @Rule //This bit is for creating Spring REST Docs
     public JUnitRestDocumentation restDocumentation = new JUnitRestDocumentation("target/generated-snippets");
 
     @Autowired
@@ -42,12 +49,22 @@ public class CorporationRestTest {
                 .build();
     }
 
-    @Transactional
-    @Test @Sql("../repository/CorporationRepositoryTest.findByIdShouldReturnCorrectCorporation.sql")
+    /**
+     * For future reference:
+     * https://www.tothepoint.company/blog/spring-rest-doc/
+     *
+     * For More Details:
+     * http://docs.spring.io/spring-restdocs/docs/current/reference/html5/
+     *
+     * @throws Exception
+     */
+    @Test
     public void getWithCorporationsShouldReturnAValidResponse() throws Exception {
         this.mockMvc
                 .perform(get("/corporations").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
+                .andExpect(jsonPath("$.page.totalElements", is(2)))
+                .andExpect(jsonPath("$.page.totalPages", is(1)))
                 .andDo(document("corporations-list"));
     }
 

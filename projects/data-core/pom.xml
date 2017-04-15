@@ -135,7 +135,6 @@
                 <configuration>
                     <includes>
                         <include>**/*Test.java</include>
-						<include>**/*Documentation.java</include>
                     </includes>
                 </configuration>
                 <dependencies>
@@ -189,7 +188,7 @@
                         </goals>
                         <configuration>
                             <outputDirectory>
-                                ${project.build.outputDirectory}/static/docs
+                                ${project.build.outputDirectory}/static/reference
                             </outputDirectory>
                             <resources>
                                 <resource>

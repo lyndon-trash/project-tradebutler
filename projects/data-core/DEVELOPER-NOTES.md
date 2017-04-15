@@ -47,6 +47,10 @@ include::{snippets}/corporations-list/curl-request.adoc[]
 ==== Example Response
 include::{snippets}/corporations-list/http-response.adoc[]
 ```
+- to access
+```
+http://localhost:8081/reference/current.html
+```
 
 ## Technical Debts
 - Rule 1: DON'T DO IT
