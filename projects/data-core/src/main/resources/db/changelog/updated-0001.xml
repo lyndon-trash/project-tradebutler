@@ -1,0 +1,57 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="lbibera (generated)" id="1492223921295-1">
+        <createTable tableName="corporation">
+            <column autoIncrement="true" name="id" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="corporation_pkey"/>
+            </column>
+            <column name="description" type="VARCHAR(10000)"/>
+            <column name="incorporation_date" type="date"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="sector" type="VARCHAR(255)"/>
+            <column name="sub_sector" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="lbibera (generated)" id="1492223921295-2">
+        <createTable tableName="historical_price">
+            <column autoIncrement="true" name="id" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="historical_price_pkey"/>
+            </column>
+            <column name="change" type="FLOAT4"/>
+            <column name="close" type="numeric(19, 2)"/>
+            <column name="date" type="date"/>
+            <column name="high" type="numeric(19, 2)"/>
+            <column name="low" type="numeric(19, 2)"/>
+            <column name="open" type="numeric(19, 2)"/>
+            <column name="prev" type="numeric(19, 2)"/>
+            <column name="price" type="numeric(19, 2)"/>
+            <column name="value" type="numeric(19, 2)"/>
+            <column name="volume" type="numeric(19, 2)"/>
+            <column name="stock_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="lbibera (generated)" id="1492223921295-3">
+        <createTable tableName="stock">
+            <column autoIncrement="true" name="id" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="stock_pkey"/>
+            </column>
+            <column name="board_lot" type="INT"/>
+            <column name="foreign_ownership_limit" type="FLOAT4"/>
+            <column name="isin" type="VARCHAR(255)"/>
+            <column name="issue_type" type="VARCHAR(255)"/>
+            <column name="listing_date" type="date"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="par_value" type="numeric(19, 2)"/>
+            <column name="sort_order" type="INT"/>
+            <column name="status" type="VARCHAR(255)"/>
+            <column name="symbol" type="VARCHAR(255)"/>
+            <column name="corporation_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="lbibera (generated)" id="1492223921295-4">
+        <addForeignKeyConstraint baseColumnNames="corporation_id" baseTableName="stock" constraintName="fka0x2eitfxtyu9ife5akthphaj" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="corporation"/>
+    </changeSet>
+    <changeSet author="lbibera (generated)" id="1492223921295-5">
+        <addForeignKeyConstraint baseColumnNames="stock_id" baseTableName="historical_price" constraintName="fkfiiuerxbjx14evdcac1tmp9fq" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="stock"/>
+    </changeSet>
+</databaseChangeLog>

@@ -48,3 +48,8 @@ logging.level:
 debug: false
 management:
   security.enabled: true
+
+#
+# Liquibase
+#
+liquibase.change-log: "classpath:db/changelog/master.xml"
