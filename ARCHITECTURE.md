@@ -4,21 +4,21 @@
 ```
 Data Core
 - master data storage
-- stores the following data: Corporation, Security, HistoricalPrice, Dividend
+- stores the following data: Corporation, Stock, HistoricalPrice
 
 
 Data Miner [PSE]
 - harvests master data from the Phisix Server
 - possibly illegal **wink**
 - receives mining commands from a Messaging Queue (Kafka)
-- as of the moment, just manually send Messages to test functionality
+- for the current milestone, just manually send Messages to test functionality
 
-+------------+
-| PostgreSQL |
-+------------+
-      ↑
-  Spring Data
-      ↑
+  +------------+
+  | PostgreSQL |
+  +------------+
+        ↑
+   Spring Data
+        ↑
 +--------------------+          +------------------------------------+          +---------------+
 |      Data Core     | ← REST ← |           Data Miner[PSE]          | → REST → | PHISIX SERVER |
 +--------------------+          +------------------------------------+          +---------------+
@@ -28,9 +28,4 @@ Data Miner [PSE]
                                               +---------+
                                               |  Kafka  |
                                               +---------+
-```
-
-###### For Reference:
-```
-← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙
 ```
