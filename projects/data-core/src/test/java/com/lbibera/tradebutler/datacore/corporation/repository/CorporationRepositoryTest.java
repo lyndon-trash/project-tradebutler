@@ -5,12 +5,12 @@ import com.lbibera.tradebutler.datacore.corporation.model.Sector;
 import com.lbibera.tradebutler.datacore.corporation.model.SubSector;
 import com.lbibera.tradebutler.datacore.stock.model.IssueType;
 import com.lbibera.tradebutler.datacore.stock.model.Stock;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.jdbc.Sql;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import javax.transaction.Transactional;
 import java.util.Arrays;
@@ -21,7 +21,7 @@ import static org.junit.Assert.assertNotNull;
 /**
  * Integration Test for Persisting the Corporation Entity
  */
-@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
 @SpringBootTest
 @Transactional
 public class CorporationRepositoryTest {
