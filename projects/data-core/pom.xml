@@ -171,6 +171,8 @@
                             <doctype>book</doctype>
                             <attributes>
                                 <snippets>${snippetsDirectory}</snippets>
+								<revnumber>${project.version}</revnumber>
+								<revdate>${maven.build.timestamp}</revdate>
                             </attributes>
                         </configuration>
                     </execution>
