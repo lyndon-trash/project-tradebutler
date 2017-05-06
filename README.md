@@ -6,6 +6,10 @@ Beginner Investors Mostly Make the Following Common Mistakes:
 - Failure to Plan for a Diversified Portfolio
 - Failure to Research
 
+#### References
+- [Udemy: Python for Finance](https://www.udemy.com/python-for-finance-investment-fundamentals-data-analytics/learn/v4/overview)
+- [Udemy; Microservices with Spring Cloud](https://www.udemy.com/microservices-with-spring-cloud/learn/v4/overview)
+
 [System Architecture](ARCHITECTURE.md)
 
 [Developer Notes](DEVELOPER-NOTES.md)
